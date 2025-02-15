@@ -1,25 +1,25 @@
-import json
+from flask import Flask, render_template_string
 from lxml import etree
 
-# Load XML file
-xml_file = 'dist/gui/data.xml'
-xml_tree = etree.parse(xml_file)
+app = Flask(__name__)
 
-# Create a dictionary from the XML
-def xml_to_dict(element):
-    result = {}
-    for child in element:
-        result[child.tag] = xml_to_dict(child) if len(child) > 0 else child.text
-    return result
+# Route to serve the XML data as a web page
+@app.route('/')
+def home():
+    # Load XML data
+    xml_file = 'dist/gui/data.xml'
+    xslt_file = 'dist/gui/style.xsl'
+    
+    # Parse XML and XSLT files
+    xml_tree = etree.parse(xml_file)
+    xslt_tree = etree.parse(xslt_file)
+    
+    # Perform the transformation
+    transform = etree.XSLT(xslt_tree)
+    result_tree = transform(xml_tree)
+    
+    # Return the transformed HTML as a response
+    return render_template_string(str(result_tree))
 
-# Convert the XML data to a dictionary
-data_dict = xml_to_dict(xml_tree.getroot())
-
-# Convert the dictionary to JSON
-json_data = json.dumps(data_dict, indent=4)
-
-# Save to a JSON file
-with open('server_data.json', 'w') as json_file:
-    json_file.write(json_data)
-
-print("XML has been converted to JSON!")
+if __name__ == '__main__':
+    app.run(debug=True)
