@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servers>
+    <server>
+        <name>OxyClient Server 1</name>
+        <status>Online</status>
+        <users>
+            <user>JohnDoe</user>
+            <user>JaneSmith</user>
+        </users>
+    </server>
+    <server>
+        <name>OxyClient Server 2</name>
+        <status>Offline</status>
+        <users>
+            <user>AdminUser</user>
+        </users>
+    </server>
+</servers>
