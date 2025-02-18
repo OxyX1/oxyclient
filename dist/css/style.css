@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px;
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.support {
+    width: 300px;
+    height: 400px;
+}
