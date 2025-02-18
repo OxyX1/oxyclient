@@ -2,11 +2,12 @@ This repository is intended for educational purposes only. We do not assume any 
 This includes, but is not limited to, damage to your own or others' computers and any violations of the law.
 
 
+------------------------------------------------------------------------------------------------------
 
 
 example of image:
 
-
+------------------------------------------------------------------------------------------------------
 ![image failed to load :(](image.png)
 ------------------------------------------------------------------------------------------------------
 
