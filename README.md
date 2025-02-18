@@ -7,7 +7,6 @@ This includes, but is not limited to, damage to your own or others' computers an
 
 example of image:
 
-------------------------------------------------------------------------------------------------------
 ![image failed to load :(](image.png)
 ------------------------------------------------------------------------------------------------------
 
