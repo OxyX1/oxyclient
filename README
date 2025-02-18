@@ -1,0 +1,41 @@
+# 🌐 oxyclient
+
+oxyclient is a powerful proxy solution designed to bypass popular web filtering software like GoGuardian, Securly, and Fortinet. It offers fast, secure, and undetected browsing, with flexible plans to meet every user’s needs.
+
+---
+
+## 🚀 Features
+
+- ⚡ **Bypass Web Filters**: Seamlessly access restricted websites and apps.
+- 🔒 **Undetected Proxy**: Operates under the radar for uninterrupted access.
+- 🧩 **Captcha Support**: Integrated captcha handling for smooth logins.
+- 💻 **Tab System**: Manage multiple browsing sessions efficiently.
+- 🛡 **Virtual Machine Support**: Advanced plans include VM integration.
+- 🛠 **Oxyum Tools**: Exclusive tools for enhanced user experience.
+- 🎯 **Google Sign-Up Support**: Quick and secure user authentication.
+
+---
+
+## 💰 Plans
+
+| Plan                | Price/Month | Features                                              |
+|---------------------|--------------|-------------------------------------------------------|
+| **Free**            | $0           | Basic bypass, captcha support, Google sign-up.        |
+| **Paid**            | $15          | Undetected proxy, tab system, additional support.     |
+| **Premium Paid**    | $25          | Includes VM access, Oxyum tools, and secret features. |
+
+---
+
+gui
+
+![home page](image.png)
+![about page](image-1.png)
+![free plan page](image-2.png)
+
+---
+
+## 🔧 Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/oxyclient.git
